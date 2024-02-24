@@ -1,5 +1,5 @@
 # About
-This CLI tool was created to quickly display the breakdown of income based on the 50-30-20 rule.
+This CLI tool was created to efficiently display income breakdown based on the 50-30-20 rule.
 <br/>
 The 50/30/20 rule is a budgeting method that splits monthly income among three main categories:
 <br/>
