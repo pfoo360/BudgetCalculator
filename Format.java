@@ -1,4 +1,4 @@
-public class Format implements IFormat{
+public class Format implements IFormat {
     private String format;
 
     public Format(String format) {
