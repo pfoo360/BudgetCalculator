@@ -16,11 +16,20 @@ public class budget {
             throw new NumberFormatException("Argument is not a valid value.");
         }
 
-        final double NEEDS_RATIO = 0.50;
-        final double WANTS_RATIO = 0.30;
-        final double SAVINGS_RATIO = 0.20;
-        System.out.printf("Needs: %,.2f\n", value * NEEDS_RATIO);
-        System.out.printf("Wants: %,.2f\n", value * WANTS_RATIO);
-        System.out.printf("Savings: %,.2f\n", value * SAVINGS_RATIO);
+        Needs needs = new Needs(value);
+        Wants wants = new Wants(value);
+        Savings savings = new Savings(value);
+
+        Format format = new Format("%,.2f\n");
+        Printer printer = new Printer(format);
+
+        System.out.print("Needs: ");
+        System.out.print(printer.print(needs.calculateAmount()));
+
+        System.out.print("Wants: ");
+        System.out.print(printer.print(wants.calculateAmount()));
+
+        System.out.print("Savings: ");
+        System.out.print(printer.print(savings.calculateAmount()));
     }
 }
