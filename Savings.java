@@ -1,4 +1,4 @@
-public class Savings implements Calculate{
+public class Savings implements Calculate {
     private final double SAVINGS_RATIO = 0.20;
     private final double amount;
 

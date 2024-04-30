@@ -1,4 +1,4 @@
-public class Wants implements Calculate{
+public class Wants implements Calculate {
     private final double WANTS_RATIO = 0.30;
     private final double amount;
 
