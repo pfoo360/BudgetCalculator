@@ -13,7 +13,7 @@ The 50/30/20 rule is a budgeting method that splits monthly income among three m
 
 ```
 
-javac budget.java
+javac Budget.java
 
 ```
 
@@ -21,6 +21,6 @@ javac budget.java
 
 ```
 
-java budget <number>
+java Budget <number>
 
 ```
